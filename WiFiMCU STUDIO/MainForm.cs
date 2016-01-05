@@ -29,7 +29,7 @@ namespace MetroFramework.WiFiMCU
             metroTileScan.PerformClick();
             getInitFile();
             metroTab.SelectTab(metroTabPage4);
-            scanPort(30);
+            scanPort(96);
             SetLineSpace(txtSP, 8);
             timer1.Start();
             metroProgressSpinner.Spinning = false;
@@ -319,7 +319,7 @@ namespace MetroFramework.WiFiMCU
         }
         private void metroTileScan_Click(object sender, EventArgs e)
         {
-            scanPort(50);
+            scanPort(96);
         }
 
         bool bUploadingFirmware = false;
